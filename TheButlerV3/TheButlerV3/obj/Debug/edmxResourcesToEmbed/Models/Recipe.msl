@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RecipesDBModelStoreContainer" CdmEntityContainer="RecipesDBEntities">
+    <EntitySetMapping Name="Tables">
+      <EntityTypeMapping TypeName="RecipesDBModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="Recipe_ID" ColumnName="Recipe_ID" />
+          <ScalarProperty Name="Recipe_Name" ColumnName="Recipe_Name" />
+          <ScalarProperty Name="Recipe_ingredince" ColumnName="Recipe_ingredince" />
+          <ScalarProperty Name="Recipe_Instructions" ColumnName="Recipe_Instructions" />
+          <ScalarProperty Name="Recipe_types" ColumnName="Recipe_types" />
+          <ScalarProperty Name="Recipe_photo" ColumnName="Recipe_photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

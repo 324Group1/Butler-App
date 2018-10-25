@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RecipesDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="Recipe_ID" />
+    </Key>
+    <Property Name="Recipe_ID" Type="int" Nullable="false" />
+    <Property Name="Recipe_Name" Type="nchar" MaxLength="10" />
+    <Property Name="Recipe_ingredince" Type="varchar" MaxLength="50" />
+    <Property Name="Recipe_Instructions" Type="varchar" MaxLength="50" />
+    <Property Name="Recipe_types" Type="int" />
+    <Property Name="Recipe_photo" Type="text" />
+  </EntityType>
+  <EntityContainer Name="RecipesDBModelStoreContainer">
+    <EntitySet Name="Table" EntityType="Self.Table" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
